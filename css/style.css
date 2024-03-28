@@ -97,6 +97,23 @@ body{
     transition: background-color .5s;
 }
 
+.esqueci{
+    display: flex;
+    width: 55%;
+    font-size: 14px;
+    align-items: center;
+    /*margin: auto;*/
+    margin-left: 45px;
+    white-space: nowrap;
+    color: #838688;
+
+}
+
+input[type="radio"] {
+    transform: scale(0.4); /* Reduz o tamanho do radio button */
+    margin-right: 5px; /* Espaçamento à direita do radio button */
+  }
+  
 .title-primary{
     color: #fff;
 }
