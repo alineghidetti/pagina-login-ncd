@@ -2,13 +2,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*a meedida das bordas é contada junto c altura e largura*/;
 }
 body{
     font-family: "Open Sans", sans-serif;
 }
 .conteiner {
-    display: flex;
+    display: flex; /*organizados automaticamente baseado no tamanho da tela*/
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -23,13 +23,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: relative; /*para não estourar a altura da coluna before*/
 
 }
 
-.content::before{
-    content: "";
-    position: absolute;
+.content::before{ /*coluna estreita*/
+    content: ""; /*pseudoelemento, definido inserindo a propriedade content em branco*/
+    position: absolute; /*toma como referencia o bloco anterior que possui position relative*/
     background-color: #478FCC;
     width: 40%;
     height: 100%;
